@@ -24,7 +24,7 @@ parser.add_argument("-f", "--function", help="request")
 args = parser.parse_args()
 
 if args.function == None or args.url == None:
-	os.system("python3 /Users/po-wei/Pythonic/urllib/urllib_request.py -h")
+	os.system("python3 urllib_request.py -h")
 else:
 	if args.function == 'request':
 		import urllib.request
