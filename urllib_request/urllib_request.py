@@ -20,13 +20,13 @@ def Request(URL):
 
 parser = argparse.ArgumentParser(description='')
 parser.add_argument("-u", "--url", help="Input url. ex: http://123.123.123.123")
-parser.add_argument("-f", "--function", help="request")
+# parser.add_argument("-f", "--function", help="request")
 args = parser.parse_args()
 
-if args.function == None or args.url == None:
+if args.url == None:
 	os.system("python3 urllib_request.py -h")
 else:
-	if args.function == 'request':
-		import urllib.request
-		Request(args.url)
+	# if args.function == 'request':
+	import urllib.request
+	Request(args.url)
 	# filter_http(args.filename, args.url, args.count)
