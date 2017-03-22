@@ -1,0 +1,37 @@
+||urllib.request||
+
+- urlopen
+	- Request  
+
+- OpenerDirector (build_opener and install_opener)
+		- BaseHandler 
+			- Request
+		- HTTPRedirectHandler (30X)
+			- Request
+		- ProxyHandler 
+			- Request (request.set_proxy())
+
+===============Auth===================
+- HTTPPasswordMgr
+- HTTPPasswordMgrWithPriorAuth
+======================================
+
+=============Http Error ==============
+- AbstractBasicAuthHandler, AbstractDigestAuthHandler
+	- Request (should be the failed)
+
+- HTTPBasicAuthHandler(401), ProxyBasicAuthHandler(407), HTTPDigestAuthHandler(401), ProxyDigestAuthHandler(407)
+	- Request
+
+- HTTPErrorProcessor (200)
+======================================
+
+- HTTPHandler, HTTPSHandler
+	- Request (which can be either GET or POST, depending on req.has_data()?)
+
+- FTPHandler
+	- Request (The login is always done with empty username and password.)
+	- CacheFTPHandler
+
+- DataHandler, FileHandler
+	- Request
