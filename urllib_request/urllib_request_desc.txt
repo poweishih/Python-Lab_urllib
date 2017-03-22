@@ -5,16 +5,15 @@
 
 - OpenerDirector (build_opener and install_opener)
 		- BaseHandler 
-		- HTTPRedirectHandler (30X)
+		- HTTPRedirectHandler
 		- ProxyHandler 
 
 ===============Handler================
 - AbstractBasicAuthHandler, AbstractDigestAuthHandler
-	- Request (should be the failed)
 
 - HTTPBasicAuthHandler, ProxyBasicAuthHandler, HTTPDigestAuthHandler, ProxyDigestAuthHandler
 
-- HTTPErrorProcessor (200)
+- HTTPErrorProcessor
 ======================================
 
 ===============Auth===================
